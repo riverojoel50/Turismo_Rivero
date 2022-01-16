@@ -13,7 +13,7 @@
     font-family: 'Oswald', sans-serif;
 }
 
-/*GRILLA LAYOUT*/
+/*GRILLA LAYOUT
 .grilla-contenedor-padre{
     display: grid;
     grid-template-columns: 100%;
@@ -25,7 +25,7 @@
     "contenido"
     "footer";
 }
-
+*/
 /*.header{grid-area: header;}
 .portada{grid-area: portada;}
 .contenido{grid-area: contenido;}
@@ -41,22 +41,27 @@
     height: 50px;
 }
 
+header{
+    background-color: rgb(87, 77, 104);
+}
+
 .logo img{
     width: 100%;
     height: 100%;
 }
 
 .logo{
-    height: 40px;
+    height: 61px;
+    width: 62px;
     padding: 5px;
     margin-left: 10px;
 }
 
 .lista{
     padding: 10px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
-
+/*
 .lista ul{
     list-style-type: none;
     text-align: center;
@@ -69,27 +74,32 @@
     display:inline-block;
 }
 
+*/
 .lista ul li a{
-    text-decoration: none;
+    /*text-decoration: none;*/
     text-transform:uppercase;
     color: azure;
 }
 
 
 .portada-index{
-    grid-area: portada;
     background-image: url("../imagen/imagenPortada.jpg");
     background-color: cyan;
-
     background-size: cover; 
+    /*
+    grid-area: portada;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
     padding: 0px;
-    margin: 0px;
+    margin: 0px;*/
+
+    height: 500px;
 }
 
+.portada-general{
+    height: 400px;
+}
 
 .portada_general{
     grid-area: portada;
@@ -126,6 +136,9 @@
     font-size: 60px;
 }*/
 
+.contenido-principal{
+    background-color: rgb(255, 255, 255);
+}
 
 .contenido_principal{
     grid-area: contenido;
@@ -137,8 +150,11 @@
 }
 
 .index{
-    display: flex;
+    /*display: flex;*/
     background-color: rgb(90, 88, 86,0.4);
+
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .general{
@@ -163,13 +179,19 @@
     text-align: center;
 }
 
+.contenedor-general{
+    padding: 50px;
+    text-align: center;
+}
+
+
 .caja{
     display: inline-block;
     padding: 5px;
 }
 
 .caja-imagen {
-    padding: 0px;
+    /*padding: 0px;*/
     height: 350px;
     width: 400px;
 }
@@ -249,6 +271,19 @@ article{
     background-color: rgb(255, 255, 255);
 }
 
+
+/*IMGAEN INDEX - BOOSTRAP*/
+.contenedor-imagen{
+    height: 380px;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /*GRILLA*/
 .grilla{
     display: grid;
@@ -265,6 +300,8 @@ article{
     width: 100%;
     height: 350px;
 }
+
+
 
 .imagen-1{
     grid-area: imagen-1;

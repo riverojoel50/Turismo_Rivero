@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -13,86 +14,79 @@
     <title>Turismo</title>
 </head>
 <body class="body_turismo grilla-contenedor-padre">
-    <header class="header">
-        <div class="logo">
-            <img src="./imagen/logo.png" class="logoPagina" alt="logoMenu">
-        </div>
-        <div class="lista">
-            <navbar>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./estadios.html">estadios</a></li>
-                    <li><a href="./hoteles.html">hoteles</a></li>
-                    <li><a href="./turismo.html">turismo</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                </ul>
-            </navbar>
-        </div>
-        <!--
-        <navbar class="header_navbar">
-            <div class="menu logo">
-                <img src="./imagen/logo_menu2.png" alt="logoMenu">
+    <header>
+        <div class="row">
+            <div class="col-lg-1">
+                <div class="logo">
+                    <img src="./imagen/logo.png" class="logoPagina" alt="logoMenu">
+                </div>
             </div>
-            <div class="menu lista">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./estadios.html">estadios</a></li>
-                    <li><a href="./hoteles.html">hoteles</a></li>
-                    <li><a href="./turismo.html">turismo</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                </ul>
+            <div class="col-lg-6 offset-lg-5">
+                <div class="lista">
+                    <navbar>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./estadios.html">estadios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./hoteles.html">hoteles</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./turismo.html">turismo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contacto.html">contacto</a></li>
+                            </ul>
+                    </navbar>
+                </div>
             </div>
-        </navbar>-->
+        </div>
     </header>
+    <div class="portada-general d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="portada_titulo">
+                <p class="texto-titulo">Sitios turisticos</p>
+                <p class="texto-subtitulo">Busca todos los sitios turisticos disponibles</p>
+                <input type="button" value="Ver guia">
+            </div>  
+        </div>
+    </div>
+    <div class="contenido-principal">
+        <div class="row text-center">
+            <p class="texto-titulo">Sitios Turisticos</p>
+        </div>
+    </div>
+    <div class="contenedor-general ">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismoQatar.jpg" alt="imagenQatar">
+            </div>
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismo2.jpg" alt="imagenQatar">
+            </div>
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismo3.jpg" alt="imagenQatar">
+            </div>
 
-    <div class="portada_general">
-        <div class="portada_titulo">
-            <p class="texto-titulo">Sitios turisticos</p>
-            <p class="texto-subtitulo">Busca todos los sitios turisticos disponibles</p>
-            <input type="button" value="Ver guia">
-        </div>   
-    </div>
-    
-    <div class="contenido_principal general">
-        <p class="texto-titulo">Sitios Turisticos</p>          
-    </div>
-
-    <div class="contenido_general">
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="./imagen/turismoQatar.jpg" alt="imagenQatar1">
-            </div>
-            <div class="caja_texto"></div>
         </div>
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="./imagen/turismo2.jpg" alt="imagenQatar2">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismo3.jpg" alt="imagenQatar">
             </div>
-            <div class="caja-texto"></div>
-        </div>
-        <br>
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="./imagen/turismo3.jpg" alt="imagenQatar3">
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismo4.jpg" alt="imagenQatar">
             </div>
-            <div class="caja_texto"></div>
-        </div>
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="./imagen/turismo4.jpg" alt="imagenQatar4">
+            <div class="col-lg-4">
+                <img class="imagen" src="./imagen/turismoQatar.jpg" alt="imagenQatar">
             </div>
-            <div class="caja_texto"></div>
         </div>
     </div>
-   
     <footer class="footer">
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./estadios.html">estadios</a></li>
-            <li><a href="./hoteles.html">hoteles</a></li>
-            <li><a href="./turismo.html">turismo</a></li>
-            <li><a href="./contacto.html">contacto</a></li>
-        </ul>
+        <div class="row">
+            <footer class="footer">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./estadios.html">estadios</a></li>
+                    <li><a href="./hoteles.html">hoteles</a></li>
+                    <li><a href="./turismo.html">turismo</a></li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                </ul>
+            </footer>
+        </div>
     </footer>
 </body>
 </html>

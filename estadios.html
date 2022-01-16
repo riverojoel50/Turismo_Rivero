@@ -5,19 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>Estadios</title>
 </head>
 <body class="body_estadio">
-    <header class="header">
-        <div class="logo">
-            <img src="./imagen/logo.png" class="logoPagina" alt="logoMenu">
+    <header>
+        <div class="row">
+            <div class="col-lg-1">
+                <div class="logo">
+                    <img src="./imagen/logo.png" class="logoPagina" alt="logoMenu">
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-5">
+                <div class="lista">
+                    <navbar>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./estadios.html">estadios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./hoteles.html">hoteles</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./turismo.html">turismo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contacto.html">contacto</a></li>
+                            </ul>
+                    </navbar>
+                </div>
+            </div>
         </div>
-        <div class="lista">
-            <navbar>
+    </header>
+        <div class="portada-general d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="portada_titulo">
+                <p class="texto-titulo">Estadios Qatar</p>
+                <p class="texto-subtitulo">Encuentra todos los datos necesario para ingresar al estadio</p>
+                <input type="button" value="Ver estadios">
+                </div>
+            </div>
+        </div>
+    <section>
+        <div class="contenido-principal">
+            <div class="row text-center">
+                <p class="texto-titulo">Presentacion Estadios</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2I26iQ4_J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-general ">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/estadioQatar1.jpg" alt="imagenQatar">
+                </div>
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/estadioQatar2.jpg" alt="imagenQatar">
+                </div>
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/Qatar.jpg" alt="imagenQatar">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/estadioQatar3.jpg" alt="imagenQatar">
+                </div>
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/estadioQatar4.jpg" alt="imagenQatar">
+                </div>
+                <div class="col-lg-4">
+                    <img class="imagen" src="./imagen/turismoRoma.jpg" alt="imagenQatar">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="row">
+            <footer class="footer">
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./estadios.html">estadios</a></li>
@@ -25,58 +93,8 @@
                     <li><a href="./turismo.html">turismo</a></li>
                     <li><a href="./contacto.html">contacto</a></li>
                 </ul>
-            </navbar>
+            </footer>
         </div>
-    </header>
-        <div class="portada_general">
-            <div class="portada_titulo">
-                <p class="texto-titulo">Estadios Qatar</p>
-                <p class="texto-subtitulo">Encuentra todos los datos necesario para ingresar al estadio</p>
-                <input type="button" value="Ver estadios">
-            </div>
-        </div>
-    <section>
-        <div class="contenido_principal general">
-            <p class="texto-titulo">Presentacion Estadios</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2I26iQ4_J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <div class="contenido_general">
-            <div class="caja">
-                <div class="caja-imagen">
-                    <img src="./imagen/estadioQatar1.jpg" alt="imagenQatar1">
-                </div>
-                <div class="caja_texto"></div>
-            </div>
-            <div class="caja">
-                <div class="caja-imagen">
-                    <img src="./imagen/estadioQatar2.jpg" alt="imagenQatar2">
-                </div>
-                <div class="caja_texto"></div>
-            </div>
-            <br>
-            <div class="caja">
-                <div class="caja-imagen">
-                    <img src="./imagen/estadioQatar3.jpg" alt="imagenQatar3">
-                </div>
-                <div class="caja_texto"></div>
-            </div>
-            <div class="caja">
-                <div class="caja-imagen">
-                    <img src="./imagen/estadioQatar4.jpg" alt="imagenQatar4">
-                </div>
-                <div class="caja_texto"></div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./estadios.html">estadios</a></li>
-            <li><a href="./hoteles.html">hoteles</a></li>
-            <li><a href="./turismo.html">turismo</a></li>
-            <li><a href="./contacto.html">contacto</a></li>
-        </ul>
     </footer>
 </body>
 </html>
