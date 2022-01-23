@@ -3,6 +3,21 @@
     padding:0px 0px;
 }
 
+
+/*---BOOTSRAP---*/
+.btn-default{
+    color: azure !important;
+    border-color: rgb(87, 77, 104) !important;
+    border-style:solid !important;
+}
+
+button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
 .texto-titulo{
     font-size: 45px;
     font-family: 'Oswald', sans-serif;
@@ -13,23 +28,6 @@
     font-family: 'Oswald', sans-serif;
 }
 
-/*GRILLA LAYOUT
-.grilla-contenedor-padre{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
-
-    grid-template-areas: 
-    "header"
-    "portada"
-    "contenido"
-    "footer";
-}
-*/
-/*.header{grid-area: header;}
-.portada{grid-area: portada;}
-.contenido{grid-area: contenido;}
-.footer{grid-area: footer;}*/
 
 /*HEADER - NAvBAR*/
 .header{
@@ -59,40 +57,17 @@ header{
 
 .lista{
     padding: 10px;
-    /*margin-right: 10px;*/
-}
-/*
-.lista ul{
-    list-style-type: none;
-    text-align: center;
-    height: 50px;
 }
 
-.lista ul li {
-    margin-top: 6px;
-    margin-left: 20px;
-    display:inline-block;
-}
-
-*/
 .lista ul li a{
-    /*text-decoration: none;*/
     text-transform:uppercase;
     color: azure;
 }
-
 
 .portada-index{
     background-image: url("../imagen/imagenPortada.jpg");
     background-color: cyan;
     background-size: cover; 
-    /*
-    grid-area: portada;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;*/
 
     height: 500px;
 }
@@ -101,23 +76,11 @@ header{
     height: 400px;
 }
 
-.portada_general{
-    grid-area: portada;
-    background-size: cover; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    padding: 0px;
-    margin: 0px;
-}
-
 .portada_titulo{
     background-color: rgb(87, 77, 104,0.75);
     text-align: center;
     color:azure;
     padding: 16px;
-    width: 30%;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -131,26 +94,24 @@ header{
     padding: 50px;
 }
 
-/*
-.presentacion_titulo{
-    font-size: 60px;
-}*/
-
 .contenido-principal{
     background-color: rgb(255, 255, 255);
 }
 
-.contenido_principal{
-    grid-area: contenido;
-    background-color: rgb(255, 255, 255);
-    /*padding: 15px;*/
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+/*formulario*/
+.formulario{
+    font-family: 'Oswald', sans-serif;
+}
+
+.formulario > fieldset > button{
+    color: black !important;
+}
+
+.formulario > fieldset > .row{
+    padding-bottom: 8px;
 }
 
 .index{
-    /*display: flex;*/
     background-color: rgb(90, 88, 86,0.4);
 
     padding-top: 15px;
@@ -174,10 +135,6 @@ header{
     margin-right: 0px;
 }
 
-.contenido_general{
-    grid-area: contenido;
-    text-align: center;
-}
 
 .contenedor-general{
     padding: 50px;
@@ -191,7 +148,6 @@ header{
 }
 
 .caja-imagen {
-    /*padding: 0px;*/
     height: 350px;
     width: 400px;
 }
@@ -201,22 +157,10 @@ header{
     height: 100%;
 }
 
-/*
-.caja-imagen{
-    padding: 0px;
-}*/
 .caja-texto{
     background-color: rgb(87, 77, 104);
     color: azure;
 }
-
-fieldset{
-    text-align: center;
-    width: 350px;
-    padding: 40px;
-    margin-left: 50px;
-}
-
 
 article{
     grid-area: contenido;
@@ -246,13 +190,6 @@ article{
     padding: 0px;
 }
 
-/*
-.body_hotel .contenido_general .caja-imagen{
-    height: 500px;
-    width: 550px;
-}
-*/
-
 /*TURISMO*/
 .body_turismo{
     background-color: rgb(90, 88, 86,0.4);
@@ -273,60 +210,11 @@ article{
 
 
 /*IMGAEN INDEX - BOOSTRAP*/
-.contenedor-imagen{
-    height: 380px;
-}
 
 .imagen{
     width: 100%;
     height: 100%;
 }
-
-
-
-/*GRILLA*/
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto auto;
-
-    grid-template-areas: 
-    "imagen-1 imagen-3 imagen-2"
-    "imagen-4 imagen-5 imagen-6" ;
-
-}
-
-.imagenGrilla{
-    width: 100%;
-    height: 350px;
-}
-
-
-
-.imagen-1{
-    grid-area: imagen-1;
-}
-
-.imagen-2{
-    grid-area: imagen-2;
-}
-
-.imagen-3{
-    grid-area: imagen-3;
-}
-
-.imagen-4{
-    grid-area: imagen-4;
-}
-
-.imagen-5{
-    grid-area: imagen-5;
-}
-
-.imagen-6{
-    grid-area: imagen-6;
-}
-
 
 
 /*FOOTER*/
@@ -351,72 +239,31 @@ footer > ul > li  > a{
     margin-left: 50px;
 }
 
+/*ANIMACION IMAGEN*/
+img:hover{
+    transform: scale(1.1);
+}
+
+img{
+    transition: all 500ms ease-out;
+}
 
 
 /*ViSTA MOVIL*/
 @media only screen and (max-width:599px){
-    /*GRILLA*/
-    .grilla{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-
-    grid-template-areas: 
-    "imagen-1" 
-    "imagen-3"
-    "imagen-2" 
-    "imagen-4"
-    "imagen-5"
-    "imagen-6";
+    .contenedor-general{
+        height: 100%;
     }
 
+    .texto-titulo{
+        font-size: 35px;
+    }
 
-    .logoPagina{
+    .texto-subtitulo{
+        font-size: 15px;
+    }
+
+    .logo{
         display: none;
     }
-    
-    .header{
-        justify-content: center;
-    }
-
-    .lista ul li{
-        margin-left: 5px;
-    }
-
-    .portada_titulo{
-        width: 70%;
-    }
-
-    
-
-    .contenido_principal{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .contenido_principal_izquierdo{
-        width: 100%;
-        padding-bottom: 6px;
-        margin: 0px;
-    }
-
-    .contenido_principal_derecho{
-        margin-left: 20px;
-    }
-
-    .caja-imagen {
-        width: 400px;
-        height: 315px;
-    }
-    
-    .general iframe{
-        padding-left: 20px;
-    }
-
-    fieldset{
-        margin-left: 70px;
-    }
 }
-
-/*1326 538*/

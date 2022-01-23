@@ -1,0 +1,136 @@
+$color-footer-header: rgb(87, 77, 104);
+$size-titulo:45px;
+$size-subtitulo: 20px;
+
+header{
+    background-color: $color-footer-header;
+}
+
+.logo{
+    height: 61px;
+    width: 62px;
+    padding: 5px;
+    margin-left: 10px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.lista{
+    padding: 10px;
+
+    ul{
+        li{
+            a{
+                text-transform:uppercase;
+                color: azure;
+            }
+        }
+    }
+}
+
+.portada-general{
+    height: 400px;
+}
+
+.portada-titula{
+    background-color: rgb(93, 80, 116);
+    
+}
+
+.portada_titulo{
+    background-color: rgba(87, 77, 104,0.75);
+    text-align: center;
+    color:azure;
+    padding: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto-titulo{
+    font-size: $size-titulo;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto-subtitulo{
+    font-size: $size-subtitulo;
+    font-family: 'Oswald', sans-serif;
+}
+
+.body-contacto{
+    background-color: rgba(90, 88, 86,0.4);
+}
+
+.contenido-principal{
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario{
+    font-family: 'Oswald', sans-serif;
+}
+
+.formulario > fieldset > button{
+    color: black !important;
+}
+
+.formulario > fieldset > .row{
+    padding-bottom: 8px;
+}
+
+
+/*FOOTER*/
+footer{
+    grid-area: footer;
+    background-color: $color-footer-header;
+    color: azure;
+    height: 200px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+footer > ul{
+    padding: 50px;
+    list-style-type: none;
+}
+
+
+footer > ul > li  > a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+/*---BOOTSRAP---*/
+.btn-default{
+    color: azure !important;
+    border-color: rgb(87, 77, 104) !important;
+    border-style:solid !important;
+}
+
+button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+
+/*ViSTA MOVIL*/
+@media only screen and (max-width:599px){
+    .contenedor-general{
+        height: 100%;
+    }
+
+    .texto-titulo{
+        font-size: 35px;
+    }
+
+    .texto-subtitulo{
+        font-size: 15px;
+    }
+
+    .logo{
+        display: none;
+    }
+}
