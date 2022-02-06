@@ -1,10 +1,14 @@
+.fuente, .formulario {
+  font-family: 'Oswald', sans-serif;
+}
+
 header {
   background-color: #574d68;
 }
 
 .logo {
-  height: 61px;
   width: 62px;
+  height: 61px;
   padding: 5px;
   margin-left: 10px;
 }
@@ -49,16 +53,16 @@ header {
   font-family: 'Oswald', sans-serif;
 }
 
+.contenido-principal .row h3 {
+  font-style: italic;
+}
+
 .body-contacto {
   background-color: rgba(90, 88, 86, 0.4);
 }
 
 .contenido-principal {
   background-color: white;
-}
-
-.formulario {
-  font-family: 'Oswald', sans-serif;
 }
 
 .formulario > fieldset > button {
@@ -71,7 +75,6 @@ header {
 
 /*FOOTER*/
 footer {
-  grid-area: footer;
   background-color: #574d68;
   color: azure;
   height: 200px;

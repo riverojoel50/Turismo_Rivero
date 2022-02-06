@@ -2,13 +2,27 @@ $color-footer-header: rgb(87, 77, 104);
 $size-titulo:45px;
 $size-subtitulo: 20px;
 
+@mixin sizez($width,$height){
+  width: $width;
+  height: $height;
+}
+
+$texto-articulo:(
+    color: rgba(0,0,0,0.2),
+    font-style: italic,
+    font-size: 10px
+);
+
+.fuente{
+    font-family: 'Oswald', sans-serif;
+}
+
 header{
     background-color: $color-footer-header;
 }
 
 .logo{
-    height: 61px;
-    width: 62px;
+    @include sizez(62px,61px);
     padding: 5px;
     margin-left: 10px;
 
@@ -58,6 +72,14 @@ header{
     font-family: 'Oswald', sans-serif;
 }
 
+.contenido-principal {
+    .row {
+        h3{
+            font-style: map-get($texto-articulo,font-style);
+        }
+    } 
+}
+
 .body-contacto{
     background-color: rgba(90, 88, 86,0.4);
 }
@@ -67,7 +89,7 @@ header{
 }
 
 .formulario{
-    font-family: 'Oswald', sans-serif;
+    @extend .fuente;
 }
 
 .formulario > fieldset > button{
@@ -81,7 +103,6 @@ header{
 
 /*FOOTER*/
 footer{
-    grid-area: footer;
     background-color: $color-footer-header;
     color: azure;
     height: 200px;
